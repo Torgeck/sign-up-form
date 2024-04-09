@@ -1,0 +1,163 @@
+/* Look out for grouping the forms fields with their labels 
+to make them stack on each other as one */
+
+@font-face {
+  font-family: NorseBold;
+  src: url("fonts/Norse-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-sky: #6899d1;
+  --color-light-sky: #a3c1e3;
+  --color-jiraffe: #d1a068;
+  --color-bush: #90af69;
+  --color-brown-eye: #4d3f34;
+  --bone-color: #e3dac9;
+  --lighter-bone-color: #ece6da;
+
+  --size-description: 24px;
+  --size-label: 12px;
+
+  --padding: 40px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+a,
+p,
+span,
+button,
+label,
+legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
+}
+
+p {
+  padding: 0 var(--padding) 0 var(--padding);
+}
+
+legend {
+  margin-right: 75%;
+  font-size: var(--size-description);
+}
+
+img {
+  width: 150px;
+}
+
+button {
+  margin-left: var(--padding);
+  margin-top: var(--padding);
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 900;
+  width: 260px;
+  background-color: var(--color-bush);
+  border-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light-sky);
+  gap: 24px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+input {
+  --border-invalid: rgb(199, 24, 24);
+
+  height: 30px;
+  width: 300px;
+  border-color: var(--color-jiraffe);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-bush);
+  box-shadow: var(--color-bush) 0px 5px 15px;
+}
+
+input:invalid {
+  border-color: var(--border-invalid);
+  box-shadow: var(--border-invalid) 0px 5px 15px;
+}
+
+label,
+.log-in {
+  font-size: var(--size-label);
+}
+
+form > .shadow {
+  box-shadow: rgba(0, 0, 0, 0.22) 4px 12px 12px;
+}
+
+.description {
+  font-size: var(--size-description);
+}
+
+.title {
+  font-family: NorseBold;
+  font-size: 52px;
+  color: var(--bone-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.label-input {
+  gap: 8px;
+  width: 35%;
+}
+
+.textfield-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 25px;
+  background-color: var(--color-sky);
+}
+
+.jiraffe-background {
+  background-image: url("img/jiraffe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.photo-credits {
+  text-align: center;
+  color: var(--bone-color);
+  margin-top: auto;
+}
