@@ -8,35 +8,66 @@
     <title>Sign up JiraffeWeb</title>
   </head>
   <body>
-    <div class="img-container">
-      <div class="logo-text"></div>
-      <div class="photo-credits"></div>
+    <div class="container jiraffe-background">
+      <div class="logo-text">
+        <img src="img/jiraffe-lined.png" alt="Odin Logo" />
+        <span class="title"> Jiraffe Web</span>
+      </div>
+      <div class="photo-credits">
+        <span
+          >Photo by
+          <a href="https://unsplash.com/@the_colourful_pixel">Sian Cooper</a> on
+          <a href="https://unsplash.com">Unsplash</a></span
+        >
+      </div>
     </div>
-    <form action="" method="post">
-      <div class="site-description">blablablabla</div>
 
-      <div class="textfield-container">
+    <form action="" method="post">
+      <p class="description"
+        >This is totally a legit site! You know you need to know about how
+        jiraffes are going to take over the world.
+      </p>
+      <p class="description"
+        >Sign up now to know more about the future leaders</p
+      >
+
+      <div class="textfield-container shadow">
         <legend>Let's fill them boxes</legend>
 
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" id="first-name" />
+        <div class="container label-input">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="first-name" id="first-name" />
+        </div>
 
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="last-name" id="last-name" />
+        <div class="container label-input">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" id="last-name" />
+        </div>
 
-        <label for="email">E-MAIL</label>
-        <input type="email" name="email" id="email" />
+        <div class="container label-input">
+          <label for="email">E-MAIL</label>
+          <input type="email" name="email" id="email" />
+        </div>
 
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" id="password" />
+        <div class="container label-input">
+          <label for="number">PHONE NUMBER</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
 
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input type="password" name="pass-confirm" id="pass-confirm" />
+        <div class="container label-input">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="container label-input">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" name="pass-confirm" id="pass-confirm" />
+        </div>
       </div>
 
-      <button type="submit">Create Account</button>
+      <button class="shadow" type="submit">Create Account</button>
 
-      <p>Already have an account? <a href="">Log in</a></p>
+      <p class="log-in">Already have an account? <a href="">Log in</a></p>
     </form>
   </body>
 </html>
